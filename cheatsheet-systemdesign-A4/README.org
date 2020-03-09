@@ -213,25 +213,26 @@ File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues
 |   3 | [[https://odino.org/my-favorite-data-structure-hyperloglog/][hyerloglog]] for count-distinct problem       | Estimation: the count of unique values with relatively high accuracy(98%)   |
 |   4 | [[https://code.dennyzhang.com/tag/reservoirsampling][Reservoir Sampling]]                          |                                                                             |
 |   5 | [[https://en.wikipedia.org/wiki/Merkle_tree][Merkle Tree]]                                 |                                                                             |
-|   6 | [[https://research.neustar.biz/2013/09/16/sketch-of-the-day-frugal-streaming/][Frugal Streaming]]                            |                                                                             |
-|   7 | [[https://architect.dennyzhang.com/explain-gossip][Gossip]]                                      | Propagate cluster status                                                    |
-|   8 | [[https://architect.dennyzhang.com/explain-vector-clocks][Vector Clocks/Version Vectors]]               |                                                                             |
-|   9 | [[https://en.wikipedia.org/wiki/Lossy_Count_Algorithm][Lossy Counting]]                              |                                                                             |
-|  10 | [[https://en.wikipedia.org/wiki/Skip_list][Skip list]]                                   |                                                                             |
-|  11 | [[https://architect.dennyzhang.com/explain-crdts][CRDTs (Conflict-Free Replicated Data Types)]] |                                                                             |
-|  12 | choice-of-2                                 |                                                                             |
+|   6 | LPM(Longest Prefix Match)                   |                                                                             |
+|   7 | [[https://research.neustar.biz/2013/09/16/sketch-of-the-day-frugal-streaming/][Frugal Streaming]]                            |                                                                             |
+|   8 | [[https://architect.dennyzhang.com/explain-gossip][Gossip]]                                      | Propagate cluster status                                                    |
+|   9 | [[https://architect.dennyzhang.com/explain-vector-clocks][Vector Clocks/Version Vectors]]               |                                                                             |
+|  10 | [[https://en.wikipedia.org/wiki/Lossy_Count_Algorithm][Lossy Counting]]                              |                                                                             |
+|  11 | [[https://en.wikipedia.org/wiki/Skip_list][Skip list]]                                   |                                                                             |
+|  12 | [[https://architect.dennyzhang.com/explain-crdts][CRDTs (Conflict-Free Replicated Data Types)]] |                                                                             |
+|  13 | choice-of-2                                 |                                                                             |
 |-----+---------------------------------------------+-----------------------------------------------------------------------------|
-|  13 | [[https://architect.dennyzhang.com/explain-sstable][SSTable (Sorted Strings Table)]]              |                                                                             |
-|  14 | MemTable                                    |                                                                             |
-|  15 | [[https://architect.dennyzhang.com/explain-lsm][LSM (Log Structured Merge Trees)]]            |                                                                             |
+|  14 | [[https://architect.dennyzhang.com/explain-sstable][SSTable (Sorted Strings Table)]]              |                                                                             |
+|  15 | MemTable                                    |                                                                             |
+|  16 | [[https://architect.dennyzhang.com/explain-lsm][LSM (Log Structured Merge Trees)]]            |                                                                             |
 |-----+---------------------------------------------+-----------------------------------------------------------------------------|
-|  16 | [[https://en.wikipedia.org/wiki/Two-phase_commit_protocol][Two-phase commit]]/[[https://en.wikipedia.org/wiki/Three-phase_commit_protocol][Three-phase commit]]         | [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-systemdesign-A4/design-algorithm.org#2pc3pc-commit][Github: link]]                                                                |
-|  17 | [[https://architect.dennyzhang.com/design-explain-paxos][Paxos and raft protocol]]                     |                                                                             |
-|  18 | Ring buffer                                 |                                                                             |
-|  19 | [[https://en.wikipedia.org/wiki/Cuckoo_hashing][cuckoo hashing]]                              | Resolve hash collisions with worst-case constant lookup time                |
-|  20 | snappy/lzss                                 | Fast data compression and decompression                                     |
-|  21 | [[https://s2geometry.io/][S2 Geometry]]                                 | Build geographic database in a better way                                   |
-|  22 | [[https://www.youtube.com/watch?v=UaMzra18TD8][geohash]]                                     |                                                                             |
+|  17 | [[https://en.wikipedia.org/wiki/Two-phase_commit_protocol][Two-phase commit]]/[[https://en.wikipedia.org/wiki/Three-phase_commit_protocol][Three-phase commit]]         | [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/blob/master/cheatsheet-systemdesign-A4/design-algorithm.org#2pc3pc-commit][Github: link]]                                                                |
+|  18 | [[https://architect.dennyzhang.com/design-explain-paxos][Paxos and raft protocol]]                     |                                                                             |
+|  19 | Ring buffer                                 |                                                                             |
+|  20 | [[https://en.wikipedia.org/wiki/Cuckoo_hashing][cuckoo hashing]]                              | Resolve hash collisions with worst-case constant lookup time                |
+|  21 | snappy/lzss                                 | Fast data compression and decompression                                     |
+|  22 | [[https://s2geometry.io/][S2 Geometry]]                                 | Build geographic database in a better way                                   |
+|  23 | [[https://www.youtube.com/watch?v=UaMzra18TD8][geohash]]                                     |                                                                             |
 #+TBLFM: $1=@-1$1+1;N
 
 [[image-blog:CheatSheet: Feature Design For Job Interview][https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/cheatsheet-systemdesign-A4/dynamo-summary.png]]
@@ -446,7 +447,7 @@ http://systemdesigns.blogspot.com/2015/12/design-uber.html
 * TODO How to design API gateway                                   :noexport:
 * TODO design amazon book recommend system                         :noexport:
 * #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO design 多线程题 例如web crawler, max photo                 :noexport:
+* TODO design 多线程题 例如web crawler, max photo                  :noexport:
 * TODO How would you design a car radio system interface           :noexport:
 * TODO caching mechanism: lru, lfu                                 :noexport:
 * Typical Tech Areas                                               :noexport:
@@ -575,3 +576,6 @@ https://www.1point3acres.com/bbs/thread-594802-1-1.html
 https://www.1point3acres.com/bbs/thread-594802-1-1.html
 * TODO Big trie can't fit in RAM                                   :noexport:
 https://www.1point3acres.com/bbs/thread-596045-1-1.html
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] Industry best practice for supporting large scale requests with different priorities? :noexport:
+* TODO How to implement individual web crawlers in concurrent programming? :noexport:
